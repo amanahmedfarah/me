@@ -169,7 +169,7 @@ class AnotherCarouselState extends State<AnotherCarousel> {
             decoration: BoxDecoration(
               borderRadius: widget.borderRadius
                   ? BorderRadius.all(widget.radius ?? Radius.circular(8.0))
-                  : null,
+                  : Radius.circular(8.0),
               image: DecorationImage(
                 //colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.2), BlendMode.dstATop),
                 image: netImage,
@@ -333,7 +333,7 @@ class AnotherCarouselState extends State<AnotherCarousel> {
                                     widget.radius ?? Radius.circular(8.0),
                                 bottomRight:
                                     widget.radius ?? Radius.circular(8.0)))
-                        : null,
+                        : Radius.circular(8.0),
                   ),
                   padding: EdgeInsets.all(widget.indicatorBgPadding),
                   child: Center(
